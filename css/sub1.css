@@ -1,0 +1,514 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'MinSans';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.2;
+    min-width: 1320px;
+}
+
+/* 스크롤바 꾸미기 시작 */
+body::-webkit-scrollbar {
+    /*스크롤바 전체*/
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    /*스크롤바 막대*/
+    background-color: #ED6365;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+body::-webkit-scrollbar-track {
+    /*스크롤바 막대 외부*/
+    background-color: #f7c5c6;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+}
+
+/* 스크롤바 꾸미기 끝 */
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Urbanist', sans-serif;
+}
+
+p {
+    font-family: 'MinSans';
+}
+
+/* header 시작 */
+header {
+    width: 100%;
+    height: 70px;
+    padding: 30px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* 부드럽게 올라가고 내려가는 효과 */
+    transition: all 1s;
+    z-index: 100;
+    /* background-color: rgb(255, 255, 255, 0.5); */
+}
+
+.nav {
+    width: 80%;
+    max-width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-up {
+    /* 헤더 높이만큼 주기 */
+    top: -121px;
+}
+
+.logo {
+    display: block;
+    width: 15%;
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+}
+
+.nav>ul {
+    width: 65%;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #000;
+    border-top: solid 1px #000;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+.nav>ul>li {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    font-weight: 200;
+    position: relative;
+}
+
+.nav>ul>li>a {
+    display: block;
+    padding: 20px 0;
+}
+
+.nav>ul>li a:hover {
+    color: #ED6365;
+}
+
+/* 서브메뉴 */
+.sub li a {
+    display: block;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sub li a:hover {
+    color: #ED6365;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.sub {
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+
+/* 서브메뉴 끝 */
+.set {
+    width: 8%;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+.set img {
+    display: block;
+}
+
+/* header 끝 */
+
+/* 영상 */
+.movie {
+    width: 100%;
+    height: 796px;
+    margin-top: 139px;
+    display: block;
+}
+
+/* 영상 */
+
+/* 공통 */
+.title {
+    border-right: solid 1px #707070;
+    border-left: solid 1px #707070;
+    display: inline-block;
+    padding: 0 90px;
+}
+
+.title h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.title p {
+    font-size: 25px;
+    font-weight: 200;
+    padding-top: 10px;
+}
+
+/* 메인1번 */
+.wrap{
+    overflow: hidden;
+    background: url(../images_sub1/main1_bg.jpg) no-repeat center;
+    height: 1920px;
+}
+.main1 {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+    margin-top: 170px;
+    margin-bottom: 200px;
+}
+.main1_wrap{
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.text1{
+    width: 500px;
+}
+.text1 h1{
+    font-family: 'Georgia', sans-serif;
+    color: #F24569;
+    padding-bottom: 40px;
+}
+.text1 p{
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 200;
+}
+
+.wrap .main1 .title{
+    margin-bottom: 100px;
+}
+
+
+
+/* 메인1번 끝 */
+
+/* 배너 */
+.banner {
+    width: 100%;
+    min-width: 1320px;
+}
+
+/* 배너 */
+
+/* 메인2 */
+.main2 {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+    margin-top: 170px;
+    margin-bottom: 180px;
+}
+
+.main2 h1 {
+    display: inline-block;
+    border-left: solid 1px #000;
+    border-right: solid 1px #000;
+    padding: 0 90px;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.main2 h3 {
+    font-size: 25px;
+    font-weight: 100;
+    padding-top: 30px;
+    font-family: Minsans;
+    margin-bottom: 90px;
+}
+
+.main2_set {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.symbol,
+.logotype{
+    width: 650px;
+    box-sizing: border-box;
+}
+
+.symbol,
+.logotype,
+.signa {
+    border: solid 1px #ED9CAD;
+    padding: 30px;
+}
+
+.symbol p,
+.logotype p,
+.signa p {
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 50px;
+}
+
+.symbol_set,
+.logotype_set,
+.signa_set {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 50px;
+}
+
+.symbol_set h2,
+.logotype_set h2,
+.signa_set h2{
+    font-weight: 300;
+    font-size: 40px;
+    padding-right: 20px;
+}
+.symbol_set h4,
+.logotype_set h4, .signa_set h4{
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 1.8;
+    font-family: 'MinSans';
+}
+/* 메인2 끝*/
+
+/* 메인3번 */
+.main3 {
+    width: 1200x;
+    margin: auto;
+    text-align: center;
+    margin-top: 170px;
+    position: relative;
+}
+
+.main3 .title {
+    margin-bottom: 100px;
+}
+
+.mc_title,
+.sc_title {
+    padding-bottom: 50px;
+}
+
+.main_in {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.maincolor,
+.subcolor,
+.mc_left,
+.mc_right,
+.sc_left,
+.sc_right {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    line-height: 1.8;
+}
+
+.mc_left,
+.sc_left {
+    padding: 0 100px;
+
+}
+
+/* 메인3번 끝 */
+
+/* 메인4번 */
+.main4 {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.main4 .title {
+    margin-bottom: 100px;
+}
+
+.main4_in {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+}
+.main4_text1, .main4_text2{
+    width: 650px;
+    box-sizing: border-box;
+}
+.main4_text1,
+.main4_text2,
+.main4_kor {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: #ED9CAD solid 1px;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.main4_urb_left,
+.main4_geo_left {
+    padding-right: 50px;
+}
+
+.main4_text2 h3, .main4_text2 p {
+    font-family: 'Georgia', sans-serif;
+}
+
+/* 메인4번 끝 */
+
+/* footer 시작 */
+footer {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.footer_in {
+    width: 1320px;
+    margin: auto;
+    padding-top: 240px;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    color: #fff;
+    line-height: 1.6;
+}
+.footer_in ul li a:hover{
+    color: black;
+
+}
+
+
+/* 푸터애니메이션 */
+.footer_bg1, .footer_bg2{
+    position: absolute;
+    z-index: -1;
+    height: 522px;
+    overflow: hidden;
+}
+.footer_bg1{
+    left: -980px;
+    top: 0px;
+    animation: footer_bg1 6s linear alternate infinite;
+}
+.footer_bg2{
+    right: -731px;
+    top: 0px;
+    animation: footer_bg2 6s linear alternate infinite;
+}
+
+@keyframes footer_bg1{
+    0%{left: -980px;}
+    100%{left: -300px;}
+}
+
+@keyframes footer_bg2{
+    0%{right: -731px;}
+    100%{right: -300px;}
+}
+
+/* 푸터 애니메이션 */
+
+
+.footer_in ul a {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.8;
+}
+.down {
+    padding-bottom: 20px;
+}
+.footer_sns {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 100px;
+}
+.footer_sns img {
+    width: 30px;
+    height: 30px;
+    padding-right: 15px;
+}
+.footer_sns li:hover img{
+    filter: brightness(0);
+}
+.footer_topbtn {
+    padding-top: 80px;
+}
+/* 탑버튼 부드럽게 올라가기 */
+#top_btn{
+padding-top: 60px;
+}
+/* footer 끝 */
