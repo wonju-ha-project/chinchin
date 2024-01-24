@@ -168,7 +168,6 @@ header {
 /* 영상 */
 .movie {
     width: 100%;
-    height: 796px;
     margin-top: 139px;
     display: block;
 }
@@ -331,7 +330,7 @@ header {
 
 /* 메인3번 */
 .main3 {
-    width: 1200x;
+    width: 1320px;
     margin: auto;
     text-align: center;
     margin-top: 170px;
@@ -345,6 +344,7 @@ header {
 .mc_title,
 .sc_title {
     padding-bottom: 50px;
+    display: block;
 }
 
 .main_in {
@@ -355,6 +355,7 @@ header {
     justify-content: space-around;
     box-sizing: border-box;
 }
+
 
 .maincolor,
 .subcolor,
@@ -369,10 +370,20 @@ header {
     justify-content: space-around;
     line-height: 1.8;
 }
+.mc_left p,
+.mc_right p,
+.sc_left p,
+.sc_right p{
+    font-size: 18px;
+}
+
+.mc_left, .sc_left{
+    padding-right: 80px
+}
 
 .mc_left,
 .sc_left {
-    padding: 0 100px;
+    /* padding-right:50px; */
 
 }
 
@@ -382,9 +393,9 @@ header {
 .main4 {
     width: 1320px;
     margin: auto;
-    text-align: center;
     margin-top: 150px;
     margin-bottom: 150px;
+    text-align: center;
 }
 
 .main4 .title {
@@ -397,10 +408,12 @@ header {
     display: -ms-flexbox;
     display: flex;
     justify-content: space-around;
+
 }
 .main4_text1, .main4_text2{
     width: 650px;
     box-sizing: border-box;
+    margin-bottom: 20px;
 }
 .main4_text1,
 .main4_text2,
@@ -412,6 +425,7 @@ header {
     border: #ED9CAD solid 1px;
     padding: 20px;
     line-height: 1.8;
+    font-size: 20px;
 }
 
 .main4_urb_left,
@@ -421,6 +435,43 @@ header {
 
 .main4_text2 h3, .main4_text2 p {
     font-family: 'Georgia', sans-serif;
+}
+.main4_mins_left{
+    padding-right: 40px;
+}
+.main4_urb_right,
+.main4_geo_right,
+.main4_mins_right
+{
+    text-align: left;
+}
+/* 폰트 굵기 변경 */
+.urb_wig1{
+    font-weight: 100;
+}
+.urb_wig2{
+    font-weight: 300;
+}
+.urb_wig3{
+    font-weight: 500;
+}
+.urb_wig4{
+    font-weight: 700;
+}
+.geo_wig2{
+    font-weight: 600;
+}
+.mins_wig1{
+    font-weight: 100;
+}
+.mins_wig2{
+    font-weight: 300;
+}
+.mins_wig3{
+    font-weight: 500;
+}
+.mins_wig4{
+    font-weight: 700;
 }
 
 /* 메인4번 끝 */
