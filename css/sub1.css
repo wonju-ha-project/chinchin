@@ -168,7 +168,6 @@ header {
 /* 영상 */
 .movie {
     width: 100%;
-    margin-top: 139px;
     display: block;
 }
 
@@ -381,11 +380,6 @@ header {
     padding-right: 80px
 }
 
-.mc_left,
-.sc_left {
-    /* padding-right:50px; */
-
-}
 
 /* 메인3번 끝 */
 
